@@ -11,7 +11,7 @@ if (isset($_POST['submit'])){
 	if ($result && $result->num_rows > 0){
 		session_start();
 		$_SESSION['isLogin'] = 1;
-		header('location: index.php');
+		header('location: artikel.php');
 	}else
 	$error = "username atau Password Salah.";
 }
