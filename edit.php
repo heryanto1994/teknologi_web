@@ -16,7 +16,7 @@ if (isset($_POST['submit']))
     $sql .= "WHERE id = '{$id}'";
     $result = mysqli_query($conn, $sql);
     if (!$result) die(mysqli_error($conn));
-    header('location: index.php?mod=admin/index');
+    header('location: artikel.php?mod=admin/index');
     
 }
 
